@@ -1,0 +1,115 @@
+.about-section {
+    padding: 100px 0;
+    background: #000;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #2d3436;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.experience-badge span {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.progress {
+    height: 100%;
+    background: red;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    color: #fff;
+    background: #ff3333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+.cta-button:hover {
+    background: #ff6666;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

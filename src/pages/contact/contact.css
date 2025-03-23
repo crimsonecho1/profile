@@ -1,0 +1,126 @@
+.contact {
+    padding: 100px 10%;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.contact h2 span {
+    color: #ff3333;
+}
+
+.contact-text {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-info {
+    text-align: left;
+    flex: 1;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-info .info-item .icon {
+    font-size: 1.5em;
+    color: #ff3333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons .youtube:hover {
+    color: #ff0000; /* أزرق */
+}
+
+.social-icons .github:hover {
+    color: #6b7280; /* رمادي */
+}
+
+.social-icons .whatsapp:hover {
+    color: #02f816; /* بنفسجي */
+}
+
+/* نموذج التواصل */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #ff3333;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background: #ff3333;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #cc0000;
+}
+
+/* استجابة للجوال */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact h2 {
+        font-size: 2.2em;
+    }
+
+    .contact-text {
+        font-size: 1em;
+    }
+}
